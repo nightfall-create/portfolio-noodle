@@ -1,0 +1,310 @@
+@charset "UTF-8";
+
+body{
+ background-image: url(pic/背景2.jpg);
+ background-repeat: repeat-y;
+ background-size: contain;
+}
+
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+.header{
+    color: red;
+    text-shadow:
+    3px 3px 0 black;
+    font-size: 120px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header img{
+    display: block;
+    width: 100%;
+    margin:0 auto;
+}
+
+.hero{
+    color: white;
+    text-shadow:
+      3px 3px 0 black;
+    font-size: 50px;
+    text-align: center;
+}
+
+.top-btn{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    width: 80px;
+    height: 80px;
+}
+
+.top-btn img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.concept{
+    color: white;
+    display: block;
+    justify-self: center;
+    padding-bottom: 30px;
+}
+
+.ramen1{
+    text-align: center;
+    width:500px;
+    max-width:100%;
+    height:auto;
+}
+
+.menu{
+    color:white;
+}
+
+.menu img{
+    width: 300px;
+    max-width: 100%;
+    height:auto;
+}
+
+.menu-inner a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/*メニューラーメン*/
+.ramen{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    padding-bottom: 30px;
+}
+
+.ramen .card{
+    width:300px;
+    text-align:center;
+    border:none;
+    padding:10px;
+}
+
+.ramen .card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+/*メニューサイド*/
+.side{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    padding-bottom: 30px;
+}
+
+.side .card{
+    width:300px;
+    text-align:center;
+    border:none;
+    padding:10px;
+}
+
+.side .card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+/*メニュー飯物*/
+.rice{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    padding-bottom: 30px;
+}
+
+.rice .card{
+    width:300px;
+    text-align:center;
+    border:none;
+    padding:10px;
+}
+
+.rice .card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.menu-inner img{
+    transition:0.2s;
+}
+
+@media (hover:hover){
+
+    .menu-inner img:hover{
+        transform:scale(1.2);
+    }
+
+}
+
+.ramen1{
+    transition:0.2s;
+}
+
+@media (hover:hover){
+
+    .ramen1:hover{
+        transform:scale(1.1);
+    }
+
+}
+
+/* PC */
+.nav{
+    display:none;
+    }
+.nav-inner{
+    display:block;
+}
+.nav-inner ul{
+    display:flex;
+    justify-content:flex-end;
+    gap:20px;
+    list-style:none;
+}
+
+.nav-inner a{
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.nav-inner a,
+.nav-inner a:visited{
+    color:white;
+}
+
+.menu-nav a,
+.menu-nav a:visited,
+.menu-nav a:focus{
+    color:white;
+}
+
+.gallery{
+    color:white;
+    padding-bottom: 30px;
+}
+
+
+.access {
+    max-width: 100%;
+    height: auto;
+    width: 1000px;
+    color:white;
+    padding-bottom: 30px;
+}
+
+.contact{
+    text-align: center;
+    padding-bottom: 20px;
+ }
+
+.contact-inner{
+    width:500px;
+    margin:0 auto;
+    padding:20px;
+    border:1px solid #000;
+    background-color:rgb(211, 212, 203);
+}
+
+.contact-inner p{
+    text-align: left;
+}
+
+.form input{
+    width:100%;
+    height:40px;
+}
+
+.form textarea{
+    width:100%;
+    height:150px;
+}
+
+/* スマホ */
+@media (max-width:768px){
+    .top-btn{
+        width:50px;
+        height:50px;
+        right:10px;
+        bottom:10px;
+    }
+ }
+
+@media (max-width:768px){
+    .nav{
+        display:block;
+        font-size:28px;
+        cursor:pointer;
+    }
+    .nav-inner{
+        display:none;
+    }
+    .nav-inner.active{
+        display:block;
+    }
+    .nav-inner ul{
+        flex-direction:column;
+        align-items:center;
+    }
+}
+
+@media (hover:hover){
+    .nav-inner a:hover{
+        color:red;
+    }
+    .menu-nav a:hover{
+        color:red;
+    }
+}
+
+@media (max-width:768px){
+    .header{
+        font-size:60px;
+    }
+
+    .hero{
+        font-size:20px;
+    }
+}
+
+@media (max-width:768px) {
+    .ramen,
+    .side,
+    .rice{
+        flex-direction:column;
+        align-items:center;
+    }
+    .category-title{
+    align-self:flex-start;
+    margin-left:20px;
+    }
+    }
+
+@media (max-width:768px) {
+    .contact-inner{
+        width:90%;
+    }
+}
+
+.footer{
+ text-align: center;
+ }
