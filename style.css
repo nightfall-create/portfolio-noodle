@@ -1,38 +1,10 @@
 @charset "UTF-8";
 
+/*========= 共通 ============*/
 body{
- background-image: url(pic/背景2.jpg);
+ background-image: url(../images/back.jpg);
  background-repeat: repeat-y;
  background-size: contain;
-}
-
-
-img{
-    max-width:100%;
-    height:auto;
-}
-
-.header{
-    color: red;
-    text-shadow:
-    3px 3px 0 black;
-    font-size: 120px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.header img{
-    display: block;
-    width: 100%;
-    margin:0 auto;
-}
-
-.hero{
-    color: white;
-    text-shadow:
-      3px 3px 0 black;
-    font-size: 50px;
-    text-align: center;
 }
 
 .top-btn{
@@ -51,130 +23,46 @@ img{
     border-radius: 50%;
 }
 
-.concept{
-    color: white;
-    display: block;
-    justify-self: center;
-    padding-bottom: 30px;
+h1,
+h2,
+h3,
+p{
+    margin:0;
 }
 
-.ramen1{
-    text-align: center;
-    width:500px;
+h1{
+    font-size:clamp(25px, 4vw, 48px);
+}
+
+h2{
+    font-size:clamp(24px, 3vw, 36px);
+}
+
+h3{
+    font-size:clamp(23px, 2vw, 24px);
+}
+
+p,
+a{
+    font-size:clamp(14px, 1.5vw, 16px);
+}
+
+img{
     max-width:100%;
     height:auto;
 }
 
-.menu{
-    color:white;
-}
-
-.menu img{
-    width: 300px;
-    max-width: 100%;
-    height:auto;
-}
-
-.menu-inner a{
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-/*メニューラーメン*/
-.ramen{
-    display:flex;
-    gap:20px;
-    justify-content:center;
-    padding-bottom: 30px;
-}
-
-.ramen .card{
-    width:300px;
-    text-align:center;
-    border:none;
-    padding:10px;
-}
-
-.ramen .card img{
-    width:100%;
-    height:300px;
-    object-fit:cover;
-}
-
-/*メニューサイド*/
-.side{
-    display:flex;
-    gap:20px;
-    justify-content:center;
-    padding-bottom: 30px;
-}
-
-.side .card{
-    width:300px;
-    text-align:center;
-    border:none;
-    padding:10px;
-}
-
-.side .card img{
-    width:100%;
-    height:300px;
-    object-fit:cover;
-}
-
-/*メニュー飯物*/
-.rice{
-    display:flex;
-    gap:20px;
-    justify-content:center;
-    padding-bottom: 30px;
-}
-
-.rice .card{
-    width:300px;
-    text-align:center;
-    border:none;
-    padding:10px;
-}
-
-.rice .card img{
-    width:100%;
-    height:300px;
-    object-fit:cover;
-}
-
-.menu-inner img{
-    transition:0.2s;
-}
-
-@media (hover:hover){
-
-    .menu-inner img:hover{
-        transform:scale(1.2);
-    }
-
-}
-
-.ramen1{
-    transition:0.2s;
-}
-
-@media (hover:hover){
-
-    .ramen1:hover{
-        transform:scale(1.1);
-    }
-
-}
-
-/* PC */
+/*========= NAV / PC ============*/
 .nav{
     display:none;
-    }
+
+}
+
 .nav-inner{
     display:block;
+    padding-right: 20px;
 }
+
 .nav-inner ul{
     display:flex;
     justify-content:flex-end;
@@ -192,54 +80,7 @@ img{
     color:white;
 }
 
-.menu-nav a,
-.menu-nav a:visited,
-.menu-nav a:focus{
-    color:white;
-}
-
-.gallery{
-    color:white;
-    padding-bottom: 30px;
-}
-
-
-.access {
-    max-width: 100%;
-    height: auto;
-    width: 1000px;
-    color:white;
-    padding-bottom: 30px;
-}
-
-.contact{
-    text-align: center;
-    padding-bottom: 20px;
- }
-
-.contact-inner{
-    width:500px;
-    margin:0 auto;
-    padding:20px;
-    border:1px solid #000;
-    background-color:rgb(211, 212, 203);
-}
-
-.contact-inner p{
-    text-align: left;
-}
-
-.form input{
-    width:100%;
-    height:40px;
-}
-
-.form textarea{
-    width:100%;
-    height:150px;
-}
-
-/* スマホ */
+/*========= NAV / スマホ ============*/
 @media (max-width:768px){
     .top-btn{
         width:50px;
@@ -276,35 +117,313 @@ img{
     }
 }
 
-@media (max-width:768px){
-    .header{
-        font-size:60px;
+/*========= ヘッダー/ヒーロー ============*/
+.header{
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hero-title{
+    color: orange;
+    text-shadow:
+    3px 3px 0 black;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header img{
+    display: block;
+    width: 100%;
+    margin:0 auto;
+}
+
+.about{
+    color: white;
+    text-shadow:
+      3px 3px 0 black;
+    gap:12px;
+    margin: 24px;
+    text-align: center;
+}
+
+.about h2{
+    font-size:clamp(24px, 3vw, 32px);
+}
+
+/*========= コンセプト ============*/
+
+.concept{
+    display:block;
+    margin:50px;
+    text-align:center;
+    gap:10px;
+}
+
+.concept h2,
+.concept p{
+    background-color: black;
+    color: red;
+    text-align: center;
+    max-width:100%;
+    height: auto;
+}
+
+.concept-img{
+    width:500px;
+    max-width:100%;
+    height:auto;
+    transition:0.3s;
+}
+
+@media (hover:hover){
+    .concept-img:hover{
+        transform:translateY(-50px) scale(1.1);
+    }
+}
+
+
+/*========= メニュー =========*/
+
+.menu{
+    color:white;
+    margin-top: 80px;
+}
+
+.menu-inner{
+    display:grid;
+    grid-template-columns:max-content minmax(0, 1fr);
+    gap: 40px;
+    align-items:start
+}
+
+.menu-inner a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.menu-nav{
+    position:sticky;
+    top:20px;
+}
+
+.menu-nav li{
+    margin-bottom: 16px;
+}
+
+.menu-content{
+    width: 100%;
+}
+
+.category-title{
+    margin: 0 0 20px;
+}
+
+.ramen,
+.side,
+.rice{
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    column-gap:16px;
+    row-gap: 40px;
+    margin:0 0 60px;
+}
+
+.card{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    align-items: center;
+    text-align: center;
+}
+
+.card img{
+    width: 100%;
+    max-width: 550px;
+    aspect-ratio:4 / 3;
+    object-fit: cover;
+    display: block;
+}
+
+.card h3,
+.card p{
+    margin: 0;
+}
+
+
+/*====== MENU 共通 ======*/
+.menu-inner img{
+    transition:0.2s;
+}
+
+.menu-nav a,
+.menu-nav a:visited,
+.menu-nav a:focus{
+    color:white;
+}
+
+@media (hover:hover){
+
+    .menu-inner img:hover{
+        transform:scale(1.1);
     }
 
-    .hero{
-        font-size:20px;
-    }
 }
 
 @media (max-width:768px) {
     .ramen,
     .side,
     .rice{
-        flex-direction:column;
-        align-items:center;
-    }
-    .category-title{
-    align-self:flex-start;
-    margin-left:20px;
-    }
+        grid-template-columns:1fr;
+     }
     }
 
-@media (max-width:768px) {
-    .contact-inner{
-        width:90%;
+    @media (max-width:768px){
+    .menu-inner{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .menu-nav{
+        position:static;
     }
 }
 
+/*======= GALLERY ===========*/
+.gallery{
+    color: white;
+    margin-bottom: 80px;
+}
+
+.gallery-inner{
+    width:100%;
+    max-width:800px;
+
+    display:grid;
+    grid-template-columns:max-content 1fr;
+    gap:10px;
+    align-items:start;
+    margin-left: 20px;
+}
+
+.gallery-text{
+    margin:0;
+    padding:0;
+    text-align:right;
+}
+
+.gallery-text p{
+    margin:0;
+    padding:0;
+}
+
+@media (max-width:768px){
+    .gallery-inner{
+        grid-template-columns:1fr;
+        margin-left:20px;
+        margin-right:20px;
+    }
+
+    .gallery-text{
+        text-align:left;
+    }
+}
+
+/*======= ACCESS ===========*/
+.access{
+    color:white;
+    padding-bottom:80px;
+}
+
+.access-inner{
+    width:100%;
+    max-width:800px;
+
+    display:grid;
+    grid-template-columns:7fr 3fr;
+    gap:10px;
+    align-items:flex-start;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+.access-image img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+.access-text{
+    background-color: #000;
+    text-align:left;
+    padding: 0 5px;
+    gap: 16px;
+}
+
+@media (max-width:768px){
+    .access-inner{
+        grid-template-columns:1fr;
+        margin-left:20px;
+        margin-right:20px;
+    }
+
+    .access-text{
+        text-align:center;
+    }
+}
+
+/*========= CONTACT ============*/
+.contact{
+    color: white;
+    text-align: center;
+    padding-bottom: 100px;
+ }
+
+ .contact h2{
+    text-align: start;
+ }
+
+.contact-inner{
+    color: #000;
+    width:500px;
+    margin:0 auto;
+    padding:20px;
+    border:1px solid #000;
+    background-color:rgb(211, 212, 203);
+}
+
+.contact-inner p{
+    text-align: left;
+}
+
+.form input{
+    width:100%;
+    height:40px;
+}
+
+.form textarea{
+    width:100%;
+    height:150px;
+}
+
+@media (max-width:768px){
+    .contact-inner{
+        width:100%;
+        margin:0;
+        box-sizing:border-box;
+        padding-left:20px;
+        padding-right:20px;
+    }
+}
+
+/*========= フッター ============*/
 .footer{
  text-align: center;
+ margin-bottom: 30px;
  }
