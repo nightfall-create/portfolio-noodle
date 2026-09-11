@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="/images/rogo.png" />
 
-    <title>天下二品</title>
+    <title>ラーメン屋</title>
   </head>
 
   <body>
@@ -21,156 +22,169 @@
       </ul>
     </nav>
 
-    <header class="header" id="header">
-      <div>天下二品</div>
-      <img src="pic/暖簾.png" alt="暖簾" class="hero-img" />
-    </header>
+    <main>
+      <header class="header" id="header">
+        <img src="images/flag.png" alt="ヒーロー" class="hero-img" />
+        <div class="hero-title">
+          <h1>ラーメン屋</h1>
+        </div>
+      </header>
 
-    <section class="hero" id="home">
-      <h1>早い・旨い・多い</h1>
-      <p>創業以来変わらぬ味を守り続けています。</p>
-    </section>
+      <section class="about" id="home">
+        <h2>早い・安い・美味い</h2>
+        <p>創業以来変わらぬ味を守り続けています。</p>
+      </section>
 
-    <a href="#header" class="top-btn" id="top-btn">
-      <img src="pic/rogo.png" alt="ロゴ" />
-    </a>
+      <a href="#header" class="top-btn" id="top-btn">
+        <img src="images/rogo.png" alt="rogo" />
+      </a>
 
-    <section class="concept" id="concept">
-      <h2>一杯に魂を込める。</h2>
-      <img src="pic/醤油.jpg" alt="醤油" class="ramen1" />
-      <p>
-        創業以来変わらぬ味を守り続けています。 毎日炊き上げる自家製スープ。
-        一杯に魂を込めています。 最後の一滴まで旨い。
-      </p>
-    </section>
+      <section class="concept" id="concept">
+        <img src="images/concept.png" alt="コンセプト" class="concept-img" />
+        <h2>囍 一杯に魂を込める。 囍</h2>
+        <p>
+          創業以来変わらぬ味を守り続けています。
+          毎日炊き上げる自家製スープ。一杯に魂を込めています。
+          最後の一滴まで旨い。
+        </p>
+      </section>
 
-    <section class="menu" id="menu">
-      <h2 class="title-link">MENU</h2>
-      <nav class="menu-nav" id="menu-nav">
-        <ul>
-          <li>
-            <div><a href="#ramen" class="item">ラーメン</a></div>
-          </li>
-          <li>
-            <div><a href="#side" class="item">サイド</a></div>
-          </li>
-          <li>
-            <div><a href="#rice" class="item">飯物</a></div>
-          </li>
-        </ul>
-      </nav>
+      <!-- ============= メニュー ============= -->
 
-      <div class="menu-inner">
-        <div class="ramen" id="ramen">
-          <h3 class="category-title">ラーメン</h3>
+      <section class="menu" id="menu">
+        <h2 class="title-link">MENU</h2>
+        <div class="menu-inner">
+          <nav class="menu-nav" id="menu-nav">
+            <ul>
+              <li>
+                <div><a href="#ramen" class="item">ラーメン</a></div>
+              </li>
+              <li>
+                <div><a href="#side" class="item">サイド</a></div>
+              </li>
+              <li>
+                <div><a href="#rice" class="item">飯物</a></div>
+              </li>
+            </ul>
+          </nav>
 
-          <div class="card">
-            <img src="pic/醤油.jpg" alt="醤油ラーメン" />
-            <h3>醤油ラーメン</h3>
-            <p>昔ながらのあっさり醤油味。</p>
-            <p>￥800</p>
-          </div>
+          <div class="menu-content">
+            <h3 class="category-title">ラーメン</h3>
+            <div class="ramen" id="ramen">
+              <article class="card">
+                <img src="images/syouyu.jpg" alt="醤油ラーメン" />
+                <h3>醤油ラーメン</h3>
+                <p>昔ながらのあっさり醤油味。</p>
+                <p>￥800</p>
+              </article>
 
-          <div class="card">
-            <img src="pic/味噌.jpeg" alt="味噌ラーメン" />
-            <h3>味噌ラーメン</h3>
-            <p>濃厚な味噌のコクが広がる一杯。</p>
-            <p>￥900</p>
-          </div>
+              <article class="card">
+                <img src="images/miso.jpeg" alt="味噌ラーメン" />
+                <h3>味噌ラーメン</h3>
+                <p>濃厚な味噌のコクが広がる一杯。</p>
+                <p>￥900</p>
+              </article>
 
-          <div class="card">
-            <img src="pic/豚骨.webp" alt="豚骨ラーメン" />
-            <h3>豚骨ラーメン</h3>
-            <p>長時間炊き上げた濃厚豚骨スープ。</p>
-            <p>￥1,000</p>
+              <article class="card">
+                <img src="images/tonkotu.webp" alt="豚骨ラーメン" />
+                <h3>豚骨ラーメン</h3>
+                <p>長時間炊き上げた濃厚豚骨スープ。</p>
+                <p>￥1,000</p>
+              </article>
+            </div>
+
+            <h3 class="category-title">サイド</h3>
+            <div class="side" id="side">
+              <article class="card">
+                <img src="images/gyouza.webp" alt="餃子" />
+                <h3>餃子</h3>
+                <p>外はパリッと中はジューシー。</p>
+                <p>￥300</p>
+              </article>
+
+              <article class="card">
+                <img src="images/syuumai.webp" alt="焼売" />
+                <h3>焼売</h3>
+                <p>肉の旨味を閉じ込めた自家製焼売。</p>
+                <p>￥400</p>
+              </article>
+            </div>
+
+            <h3 class="category-title">飯物</h3>
+            <div class="rice" id="rice">
+              <article class="card">
+                <img src="images/chaahan.jpg" alt="炒飯" />
+                <h3>炒飯</h3>
+                <p>強火で仕上げた香ばしい炒飯。</p>
+                <p>￥700</p>
+              </article>
+
+              <article class="card">
+                <img src="images/rice.jpg" alt="白飯" />
+                <h3>白飯</h3>
+                <p>白米でバウンド。</p>
+                <p>￥350</p>
+              </article>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div class="side" id="side">
-          <h3 class="category-title">サイド</h3>
+      <!-- ============= 店舗紹介 ============= -->
+      <section class="gallery" id="gallery">
+        <h2 class="title-link">GALLERY</h2>
 
-          <div class="card">
-            <img src="pic/餃子.webp" alt="餃子" />
-            <h3>餃子</h3>
-            <p>外はパリッと中はジューシー。</p>
-            <p>￥300</p>
+        <div class="gallery-inner">
+          <div class="gallery-text">
+            <p>店舗の外観写真</p>
           </div>
 
-          <div class="card">
-            <img src="pic/焼売.webp" alt="焼売" />
-            <h3>焼売</h3>
-            <p>肉の旨味を閉じ込めた自家製焼売。</p>
-            <p>￥400</p>
+          <div class="gallery-image">
+            <img src="images/shop.jpg" alt="店舗" />
           </div>
         </div>
+      </section>
 
-        <div class="rice" id="rice">
-          <h3 class="category-title">飯物</h3>
+      <section class="access" id="access">
+        <h2 class="title-link">ACCESS</h2>
 
-          <div class="card">
-            <img src="pic/炒飯.jpg" alt="炒飯" />
-            <h3>炒飯</h3>
-            <p>強火で仕上げた香ばしい炒飯。</p>
-            <p>￥700</p>
+        <div class="access-inner">
+          <div class="access-image">
+            <img src="images/map.png" alt="住所" />
           </div>
 
-          <div class="card">
-            <img src="pic/白飯.jpg" alt="白飯" />
-            <h3>白飯</h3>
-            <p>ごはんでバウンド。</p>
-            <p>￥350</p>
+          <div class="access-text">
+            <p>日本北海道東京都京都市666-13</p>
+            <p>0120-444-444</p>
+            <p>営業時間 0：00～19：06</p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="gallery" id="gallery">
-      <h2 class="title-link">GALLERY</h2>
+      <!-- Contact -->
+      <section class="contact" id="contact">
+        <h2 class="title-link">CONTACT</h2>
 
-      <div class="gallery-inner">
-        <div class="card">
-          <img src="pic/店舗.jpg" alt="店舗" />
-          <p>店舗の外観写真</p>
+        <div class="contact-inner">
+          <form class="form">
+            <p>お名前：</p>
+            <input type="text" />
+
+            <p>メール：</p>
+            <input type="email" />
+
+            <p>内容：</p>
+            <textarea></textarea>
+
+            <button>送信</button>
+          </form>
         </div>
-      </div>
-    </section>
-
-    <section class="access" id="access">
-      <h2 class="title-link">ACCESS</h2>
-
-      <div class="access-inner">
-        <div class="card">
-          <img src="pic/地図.png" alt="住所" />
-          <p>日本北海道東京都京都市666-13</p>
-          <p>0120-444-444</p>
-          <p>営業時間 0：00～19：06</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="contact" id="contact">
-      <h2 class="title-link">contact</h2>
-
-      <div class="contact-inner">
-        <form class="form">
-          <p>お名前：</p>
-          <input type="text" />
-
-          <p>メール：</p>
-          <input type="email" />
-
-          <p>内容：</p>
-          <textarea></textarea>
-
-          <button>送信</button>
-        </form>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-- フッター-->
-    <footer class="footer">© 2026 NOV</footer>
+    <footer class="footer">©2026 NOV All Rights Reserved</footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
